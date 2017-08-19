@@ -1,0 +1,97 @@
+﻿body {
+  font-size: 14px;
+  line-height: 21px;
+  color:rgb(0,0,0);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "PTSans", sans-serif, serif;
+}
+
+h1 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.interesting {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantages-item {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.advantages-item-blue {
+  color:rgb(255,255,255);
+  background-color: rgb(129,179,210);
+}
+
+.advantages-item-gray {
+  background-color: rgb(238,238,238)
+  ;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.button-form-status {
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(118,99,87);
+}
+
+.button-submit {
+  font-size: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(129,179,210);
+}
+
+.modal form {
+  display: none;
+}
+
+.modal form:target {
+  display: block;
+}
+
+.date-field {
+  width: 200px; /* Ширина поля с кнопкой */
+  border: 1px solid black;
+  background-color: rgb(242,242,242);
+}
+
+.date {
+  width: 120px; /* Ширина поля без кнопки */
+  border: none;
+}
+
+.list-social li {
+  display:inline-block;
+  background-color: rgb(129,179,210);
+}
+
+.hotel-filter-container {
+  background-image: url("img/filter-background2.jpg");
+}
+
+.sorting-style li,
+.sorting-style-direction li {
+  display:inline-block;
+}

@@ -23,8 +23,6 @@ a {
 }
 
 .site-navigation a {
-  width: 10%;
-
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
@@ -41,25 +39,26 @@ a {
   color: rgb(118, 99, 87);
 }
 
-.interesting {
-  font-size: 30px;
+.heading {
+  font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
-.advantages-item {
-  font-size: 21px;
-  line-height: 26px;
-}
-
 .advantages-item-blue {
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 
   background-color: rgb(129, 179, 210);
 }
 
 .advantages-item-gray {
   background-color: rgb(238, 238, 238);
+}
+
+.interesting {
+  font-size: 30px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .footer-hashtag {
@@ -76,6 +75,43 @@ a {
   background-color: rgb(118, 99, 87);
 }
 
+.button-form-status:hover {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(96, 78, 67);
+}
+
+.button-form-status:active {
+  color: rgb(133, 120, 113);
+
+  background-color: rgb(80, 62, 51);
+}
+
+.calendar-icon::after {
+  content: url("../img/calendar.svg");
+  display: block;
+
+  width: 21px;
+  height: 22px;
+}
+
+.icon-minus::before {
+  content: url("../img/icon-minus.png");
+  display: block;
+
+  width: 12px;
+  height: 13px; /* увеличил, чтобы видеть - при отладке */
+}
+
+.icon-plus::after {
+  content: url("../img/icon-plus.png");
+  display: block;
+
+  width: 11px;
+  height: 11px;
+}
+
+
 .search-button-submit {
   font-size: 21px;
   color: rgb(255, 255, 255);
@@ -84,6 +120,35 @@ a {
 
   background-color: rgb(129, 179, 210);
 }
+
+.search-button-submit:hover {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(102, 158, 192);
+}
+
+.search-button-submit:active {
+  color: rgb(136, 182, 209);
+
+  background-color: rgb(84, 150, 189);
+}
+
+
+.modal form {
+  display: none;
+}
+
+.modal form:target {
+  display: block;
+}
+
+.list-social li {
+  display:inline-block;
+
+  background-color: rgb(129, 179, 210);
+}
+
+/* ниже идут стили непосредственно для hotels.html */
 
 .hotel-filter-form {
   color: rgb(255, 255, 255);
@@ -117,36 +182,35 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
-.modal form {
-  display: none;
-}
 
-.modal form:target {
-  display: block;
-}
-
-.date-field {
-  width: 200px; /* Ширина поля с кнопкой */
-
-  border: 1px solid black;
-  background-color: rgb(242, 242, 242);
-}
-
-.date {
-  width: 120px; /* Ширина поля без кнопки */
-
-  border: none;
-}
-
-.list-social li {
-  display:inline-block;
-
-  background-color: rgb(129, 179, 210);
+.result-item-sorting {
+  font-size: 12px;
 }
 
 .sorting-style li,
 .sorting-style-direction li {
   display: inline-block;
+}
+
+.sorting-style a {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.302);
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
+.sorting-style a.current {
+  color: rgb(129, 179, 210);
+  border: none;
+}
+
+.sorting-style a:hover {
+  color: rgb(129, 179, 210);
+}
+
+.sorting-style a:active {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .result-item-number,
@@ -155,6 +219,19 @@ a {
   line-height: 26px;
   font-weight: bold;
 }
+
+.hotel-item-title {
+  color: rgb(0, 0, 0);
+}
+
+.hotel-item-title:hover {
+  color: rgb(129, 179, 210);
+}
+
+.hotel-item-title:active {
+  color: rgba(0, 0, 0, 0.302);
+}
+
 
 .button-info {
   font-weight: bold;

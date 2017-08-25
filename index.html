@@ -34,7 +34,7 @@
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
         <!-- вариант с фиксированной шириной 1200px  -->
         <p class="intro-welcome">
-          <img class="intro-image" src="img/intro-min_118.jpg" width="1200" height="780" alt="Гранд Каньон фото">
+          <img class="intro-image" src="img/intro.jpg" width="1200" height="565" alt="Гранд Каньон фото">
         </p>
       </section>
     </header>
@@ -42,7 +42,7 @@
 
       <section class="advantages">
         <header>
-          <h1>
+          <h1 class="heading">
             СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
             ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
           </h1>
@@ -52,8 +52,8 @@
         </header>
         <ul class="advantages-list">
           <li>
-            <p class="advantages-item advantages-item-blue">
-              <p>
+            <p class="advantages-item">
+              <p class="heading advantages-item-blue">
                 НАСТОЯЩИЙ
                 ГОРОДОК
               </p>
@@ -74,7 +74,7 @@
                   <p>
                     <img src="img/icon-house.svg" alt="Иконка жилья" width="75" height="72">
                   </p>
-                  <p>ЖИЛЬЕ</p>
+                  <p class="heading">ЖИЛЬЕ</p>
                   <p>
                     РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
                     МОТЕЛЕ, ВСЕ КАК В КИНО!
@@ -86,7 +86,7 @@
                   <p>
                     <img src="img/icon-burger.svg" alt="Иконка бургера" width="74" height="70">
                   </p>
-                  <p>ЕДА</p>
+                  <p class="heading">ЕДА</p>
                   <p>
                     ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР.
                     ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
@@ -98,7 +98,7 @@
                   <p>
                     <img src="img/icon-gift.svg" alt="Иконка подарка" width="64" height="76">
                   </p>
-                  <p>СУВЕНИРЫ</p>
+                  <p class="heading">СУВЕНИРЫ</p>
                   <p>
                     НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
                     ПРОИЗВОДСТВА!
@@ -111,8 +111,8 @@
             <p>
               <img src="img/advantages-rocks.jpg" alt="ФОТО: МОСТ ДЬЯВОЛА" width="800" height="256">
             </p>
-            <p class="advantages-item advantages-item-blue">
-              <p>
+            <p class="advantages-item">
+              <p class="heading advantages-item-blue">
                 ТАМ ЕСТЬ
                 МОСТ ДЬЯВОЛА
               </p>
@@ -124,7 +124,7 @@
             </p>
           </li>
           <li>
-            <p>
+            <p class="heading advantages-item-gray">
               НЕБОЛЬШАЯ
               ПЛОЩАДЬ
             </p>
@@ -133,7 +133,7 @@
               ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
               НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
             </p>
-            <p>
+            <p class="heading advantages-item-gray">
               КРАСИВАЯ
               ДОРОГА
             </p>
@@ -142,7 +142,7 @@
               ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
               НЕ СКУЧНО!
             </p>
-            <p>
+            <p class="heading advantages-item-gray">
               МАЛО
               ТУРИСТОВ
             </p>
@@ -159,8 +159,8 @@
         <p class="hotel-search-text interesting">
           ЗАИНТЕРЕСОВАЛИСЬ?
         </p>
-          УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
-          И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+        УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
+        И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
         <a href="#mw" class="button-form-status">
           ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
         </a>
@@ -172,7 +172,7 @@
     </main>
 
     <footer class="footer-main">
-      <p class="footer-hashtag">
+      <p class="footer-hashtag heading">
         #VISITSEDONA
       </p>
       <ul class="list-social">
@@ -203,44 +203,43 @@
     <section class="modal modal-search">
       <h2 class="visually-hidden">Форма для поиска гостиницы в Седоне</h2>
       <form id="mw" class="form-hotel-search" action="https://echo.htmlacademy.ru" method="GET">
-<!--    <button class="button-form-status" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button> -->
         <p>
-          <label for="arrival-date">ДАТА ЗАЕЗДА:
-            <input id="arrival-date" type="text" name="arrival" value="" placeholder="7 августа 2017">
-            <a class="calendar">
-              <img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
-            </a>
-          </label>
+          <label for="arrival-date">ДАТА ЗАЕЗДА:</label>
+          <input id="arrival-date" type="text" name="arrival" value="" placeholder="7 АВГУСТА 2017">
+          <a class="calendar" href="#">
+            <span class="calendar-icon"></span>
+          </a>
         </p>
         <p>
-          <label for="departure-date">ДАТА ВЫЕЗДА:
-            <input id="departure-date" type="text" name="departure" value="" placeholder="13 сентября 2017">
-            <a class="calendar">
-              <img src="img/calendar.svg" alt="Иконка календаря" width="21" height="22">
-            </a>
-          </label>
+          <label for="departure-date">ДАТА ВЫЕЗДА:</label>
+          <input id="departure-date" type="text" name="departure" value="" placeholder="13 АВГУСТА 2017">
+          <a class="calendar" href="#">
+            <span class="calendar-icon"></span>
+          </a>
         </p>
         <p class="visitors">
           <label for="adults-number">ВЗРОСЛЫЕ:</label>
-          <a class="minus">
-            <img src="img/icon-minus.png" alt="Иконка minus" width="12" height="3">
+          <a class="minus" href="#">
+            <span class="icon-minus"></span>
           </a>
           <input id="adults-number" type="text" name="adults-number" value="" placeholder="2">
-          <a class="plus">
-            <img src="img/icon-plus.png" alt="Иконка plus" width="11" height="11">
+          <a class="plus" href="#">
+            <span class="icon-plus"></span>
           </a>
         </p>
         <p class="visitors">
           <label for="kids-number">ДЕТИ:</label>
-          <a class="minus">
-            <img src="img/icon-minus.png" alt="Иконка minus" width="12" height="3">
+          <a class="minus" href="#">
+            <span class="icon-minus"></span>
           </a>
           <input id="kids-number" type="text" name="kids-number" value="" placeholder="0">
-          <a class="plus">
-            <img src="img/icon-plus.png" alt="Иконка plus" width="11" height="11">
+          <a class="plus" href="#">
+            <span class="icon-plus"></span>
           </a>
         </p>
-        <button class="search-button-submit" type="submit">НАЙТИ</button>
+        <button class="search-button-submit" type="submit">
+          НАЙТИ
+        </button>
       </form>
     </section>
   </body>

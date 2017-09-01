@@ -9,12 +9,10 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="logo">
-        <a>
-          <img src="img/logo.png" alt="Логотип турбюро Седона" width="60" height="60">
-        </a>
-      </div>
       <nav class="main-navigation">
+        <a class="logo">
+          <img src="img/logo.png" width="137" height="71">
+        </a>
         <ul class="site-navigation">
           <li>
             <a href="info.html">ИНФОРМАЦИЯ</a>
@@ -31,167 +29,179 @@
         </ul>
       </nav>
       <section class="intro">
-        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-        <!-- вариант с фиксированной шириной 1200px  -->
-        <p class="intro-welcome">
-          <img class="intro-image" src="img/intro.jpg" width="1200" height="565" alt="Гранд Каньон фото">
-        </p>
+        <div class="intro-welcome">
+          <img class="welcome" src="img/sedona-welcome.png" width="458" height="352" alt="Добро пожаловать">
+        </div>
       </section>
     </header>
     <main class="container">
 
       <section class="advantages">
         <header>
-          <h1 class="heading">
-            СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
-            ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
-          </h1>
-          <p>
-            РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
-          </p>
+          <div class="advantages-header-wrapper container">
+            <h1 class="heading">
+              СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+              ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+            </h1>
+            <p>
+              РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!
+            </p>
+          </div>
         </header>
         <ul class="advantages-list">
-          <li>
-            <p class="advantages-item">
-              <p class="heading advantages-item-blue">
+          <li class="advantages-item-blue">
+            <div class="advantages-item-wrapper">
+              <h2 class="heading">
                 НАСТОЯЩИЙ
                 ГОРОДОК
-              </p>
-              <span>- №1 -</span>
+              </h2>
+              - №1 -
               <p>
                 СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,
                 ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ
               </p>
-            </p>
-            <p>
+            </div>
+            <div class="item-blue-photo">
               <img src="img/advantages-town.jpg" alt="В СЕДОНЕ ТЕЧЕТ СВОЯ ЖИЗНЬ" width="800" height="256">
-            </p>
+            </div>
           </li>
-          <li>
-            <ul>
-              <li>
-                <p class="advantages-item">
-                  <p>
-                    <img src="img/icon-house.svg" alt="Иконка жилья" width="75" height="72">
-                  </p>
-                  <p class="heading">ЖИЛЬЕ</p>
-                  <p>
-                    РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
-                    МОТЕЛЕ, ВСЕ КАК В КИНО!
-                  </p>
+          <li class="advantages-items-white">
+            <ul class="items-white-list">
+              <li class="advantages-item-wrapper">
+                <p>
+                  <img src="img/icon-house.svg" alt="Иконка жилья" width="75" height="72">
+                </p>
+                <h2 class="heading">ЖИЛЬЕ</h2>
+                <p>
+                  РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
+                  МОТЕЛЕ, ВСЕ КАК В КИНО!
                 </p>
               </li>
-              <li>
-                <p class="advantages-item">
-                  <p>
-                    <img src="img/icon-burger.svg" alt="Иконка бургера" width="74" height="70">
-                  </p>
-                  <p class="heading">ЕДА</p>
-                  <p>
-                    ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР.
-                    ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
-                  </p>
+              <li class="advantages-item-wrapper">
+                <p>
+                  <img src="img/icon-burger.svg" alt="Иконка бургера" width="74" height="70">
+                </p>
+                <h2 class="heading">ЕДА</h2>
+                <p>
+                  ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР.
+                  ВЫ НЕ РАЗОЧАРУЕТЕСЬ!
                 </p>
               </li>
-              <li>
-                <p class="advantages-item">
-                  <p>
-                    <img src="img/icon-gift.svg" alt="Иконка подарка" width="64" height="76">
-                  </p>
-                  <p class="heading">СУВЕНИРЫ</p>
-                  <p>
-                    НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
-                    ПРОИЗВОДСТВА!
-                  </p>
+              <li class="advantages-item-wrapper">
+                <p>
+                  <img src="img/icon-gift.svg" alt="Иконка подарка" width="64" height="76">
+                </p>
+                <h2 class="heading">СУВЕНИРЫ</h2>
+                <p>
+                  НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
+                  ПРОИЗВОДСТВА!
                 </p>
               </li>
             </ul>
           </li>
-          <li>
-            <p>
+          <li class="advantages-item-blue">
+            <div class="item-blue-photo">
               <img src="img/advantages-rocks.jpg" alt="ФОТО: МОСТ ДЬЯВОЛА" width="800" height="256">
-            </p>
-            <p class="advantages-item">
-              <p class="heading advantages-item-blue">
+            </div>
+            <div class="advantages-item-wrapper">
+              <h2 class="heading">
                 ТАМ ЕСТЬ
                 МОСТ ДЬЯВОЛА
-              </p>
+              </h2>
               <span>- №2 -</span>
               <p>
                 ДА, ПО НЕМУ МОЖНО ПРОЙТИ!
                 ЕСЛИ КОНЕЧНО ВЫ ОСМЕЛИТЕСЬ
               </p>
-            </p>
+            </div>
           </li>
-          <li>
-            <p class="heading advantages-item-gray">
-              НЕБОЛЬШАЯ
-              ПЛОЩАДЬ
-            </p>
-            <span>- №3 -</span>
-            <p>
-              ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
-              НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
-            </p>
-            <p class="heading advantages-item-gray">
-              КРАСИВАЯ
-              ДОРОГА
-            </p>
-            <span>- №4 -</span>
-            <p>
-              ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
-              НЕ СКУЧНО!
-            </p>
-            <p class="heading advantages-item-gray">
-              МАЛО
-              ТУРИСТОВ
-            </p>
-            <span>- №5 -</span>
-            <p>
-              БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
-              И ТОЛПИТСЯ ТАМ
-            </p>
+          <li class="advantages-items-gray">
+            <ul class="items-gray-list">
+              <li class="advantages-item-wrapper">
+                <h2 class="heading">
+                    НЕБОЛЬШАЯ
+                    ПЛОЩАДЬ
+                </h2>
+                <span>- №3 -</span>
+                <p>
+                  ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+                  НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО
+                </p>
+              </li>
+              <li class="advantages-item-wrapper">
+                <h2 class="heading">
+                  КРАСИВАЯ
+                  ДОРОГА
+                </h2>
+                <span>- №4 -</span>
+                <p>
+                  ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
+                  НЕ СКУЧНО!
+                </p>
+              </li>
+              <li class="advantages-item-wrapper">
+                <h2 class="heading">
+                  МАЛО
+                  ТУРИСТОВ
+                </h2>
+                <span>- №5 -</span>
+                <p>
+                  БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
+                  И ТОЛПИТСЯ ТАМ
+                </p>
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
       <section class="hotel-search">
-        <h2 class="visully-hidden">Поиск гостиницы в Седоне</h2>
-        <p class="hotel-search-text interesting">
-          ЗАИНТЕРЕСОВАЛИСЬ?
-        </p>
-        УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
-        И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
-        <a href="#mw" class="button-form-status">
-          ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
-        </a>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <div class="hotel-search-wrapper">
+          <p class="hotel-search-text interesting">
+            ЗАИНТЕРЕСОВАЛИСЬ?
+          </p>
+          <p>
+            УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
+            И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ
+          </p>
+          <a class="button-form-status" href="#modal-search-form">
+            ПОИСК ГОСТИНИЦЫ В СЕДОНЕ
+          </a>
+        </div>
       </section>
       <section class="map">
-        <h2 class="visully-hidden">Карта окрестностей Седоны</h2>
-        <img src="img/map.jpg" alt="Карта окрестностей Седоны" width="1200" height="593">
+        <h2 class="visually-hidden">Карта окрестностей Седоны</h2>
+        <div class="sedona-map">
+          <img src="img/map.jpg" alt="Карта окрестностей Седоны" width="1200" height="473">
+        </div>
       </section>
     </main>
-
-    <footer class="footer-main">
+    <footer class="footer-main container">
       <p class="footer-hashtag heading">
         #VISITSEDONA
       </p>
-      <ul class="list-social">
-        <li>
-          <a class="social-button" href="#">
-            <img src="img/twitter.svg" width="17" height="15" alt="Кнопка Твиттер">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img src="img/fb-icon.svg" width="12" height="22" alt="Кнопка Фейсбук">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#">
-            <img src="img/youtube.svg" width="20" height="16" alt="Кнопка Ютуб">
-          </a>
-        </li>
-      </ul>
+      <p>
+        <ul class="footer-social">
+          <li class="social-button">
+            <a class="social-button-twitter" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <img src="img/twitter.svg" width="17" height="15" alt="Кнопка Твиттер">
+            </a>
+          </li>
+          <li class="social-button">
+            <a class="social-button-fb" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="img/fb-icon.svg" width="12" height="22" alt="Кнопка Фейсбук">
+            </a>
+          </li>
+          <li class="social-button">
+            <a class="social-button-youtube" href="#">
+              <span class="visually-hidden">Ютуб</span>
+              <img src="img/youtube.svg" width="20" height="16" alt="Кнопка Ютуб">
+            </a>
+          </li>
+        </ul>
+      </p>
       <p class="footer-copyright">
         WEBSITE BY
         <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -199,43 +209,46 @@
         </a>
       </p>
     </footer>
-
     <section class="modal modal-search">
-      <h2 class="visually-hidden">Форма для поиска гостиницы в Седоне</h2>
-      <form id="mw" class="form-hotel-search" action="https://echo.htmlacademy.ru" method="GET">
-        <p>
-          <label for="arrival-date">ДАТА ЗАЕЗДА:</label>
+      <h2 class="visually-hidden">
+        Форма для поиска гостиницы в Седоне
+      </h2>
+      <form id="modal-search-form" class="form-hotel-search" action="https://echo.htmlacademy.ru" method="GET">
+        <p class="form-item">
+          <label for="arrival-date">ДАТА ЗАЕЗДА: </label>
           <input id="arrival-date" type="text" name="arrival" value="" placeholder="7 АВГУСТА 2017">
           <a class="calendar" href="#">
             <span class="calendar-icon"></span>
           </a>
         </p>
-        <p>
-          <label for="departure-date">ДАТА ВЫЕЗДА:</label>
+        <p class="form-item">
+          <label for="departure-date">ДАТА ВЫЕЗДА: </label>
           <input id="departure-date" type="text" name="departure" value="" placeholder="13 АВГУСТА 2017">
           <a class="calendar" href="#">
             <span class="calendar-icon"></span>
           </a>
         </p>
-        <p class="visitors">
-          <label for="adults-number">ВЗРОСЛЫЕ:</label>
-          <a class="minus" href="#">
-            <span class="icon-minus"></span>
-          </a>
-          <input id="adults-number" type="text" name="adults-number" value="" placeholder="2">
-          <a class="plus" href="#">
-            <span class="icon-plus"></span>
-          </a>
-        </p>
-        <p class="visitors">
-          <label for="kids-number">ДЕТИ:</label>
-          <a class="minus" href="#">
-            <span class="icon-minus"></span>
-          </a>
-          <input id="kids-number" type="text" name="kids-number" value="" placeholder="0">
-          <a class="plus" href="#">
-            <span class="icon-plus"></span>
-          </a>
+        <p class="form-item">
+          <p class="adults">
+            <label for="adults-number">ВЗРОСЛЫЕ: </label>
+            <a class="minus" href="#">
+              <span class="icon-minus"></span>
+            </a>
+            <input id="adults-number" type="text" name="adults-number" value="" placeholder="2">
+            <a class="plus" href="#">
+              <span class="icon-plus"></span>
+            </a>
+          </p>
+          <p class="kids">
+            <label for="kids-number">ДЕТИ: </label>
+            <a class="minus" href="#">
+              <span class="icon-minus"></span>
+            </a>
+            <input id="kids-number" type="text" name="kids-number" value="" placeholder="0">
+            <a class="plus" href="#">
+              <span class="icon-plus"></span>
+            </a>
+          </p>
         </p>
         <button class="search-button-submit" type="submit">
           НАЙТИ

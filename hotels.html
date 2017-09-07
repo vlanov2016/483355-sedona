@@ -11,20 +11,28 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="logo" href="index.html">
-          <img src="img/logo.png" width="137" height="71">
+          <img src="img/logo.png" width="137" height="71" alt="Добро пожаловать">
         </a>
         <ul class="site-navigation">
-          <li>
-            <a href="info.html">ИНФОРМАЦИЯ</a>
+          <li class="left-part">
+            <ul >
+              <li>
+                <a href="info.html">ИНФОРМАЦИЯ</a>
+              </li>
+              <li>
+                <a href="photo.html">ФОТО И ВИДЕО</a>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="photo.html">ФОТО И ВИДЕО</a>
-          </li>
-          <li>
-            <a href="map.html">КАРТА ШТАТА</a>
-          </li>
-          <li>
-            <a class="site-navigation-current" href="hotels.html">ГОСТИНИЦЫ</a>
+          <li class="right-part">
+            <ul>
+              <li>
+                <a href="map.html">КАРТА ШТАТА</a>
+              </li>
+              <li>
+                <a class="active" href="hotels.html">ГОСТИНИЦЫ</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -33,6 +41,7 @@
       <section class="hotel-filter">
         <h2 class="visually-hidden">Форма для выбора гостиницы в Седоне</h2>
         <form class="hotel-filter-form" action="https://echo.htmlacademy.ru" method="GET">
+          <div class="interior-page">
             <fieldset class="infrastructure">
               <legend>ИНФРАСТРУКТУРА:</legend>
               <ul>
@@ -81,22 +90,28 @@
             </fieldset>
             <fieldset class="price-level">
               <legend>СТОИМОСТЬ В СУТКИ (Р):</legend>
-              <ul> <!-- буду исподьзовать демо про слайдеры -->
-                <li class="filter-option">
-                  <label for="lower-price" class="visually-hidden">Минимальная цена</label>
-                  <input id="lower-price" class="visually-hidden filter-input filter-input-text" type="text" name="lower-price" value="" placeholder="ОТ 0">
-                </li>
-                <li class="filter-option">
-                  <label for="upper-price" class="visually-hidden">Максимальная цена</label>
-                  <input id="upper-price" class="visually-hidden filter-input filter-input-text" type="text" name="upper-price" value="" placeholder="ДО 3000">
-                </li>
-              </ul>
-              <div class="range-slider">
-                <input type="range" name="price-min" id="price-min" value="0" min="0" max="3000">
-                <input type="range" name="price-max" id="price-max" value="3000" min="0" max="3000">
-              </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    <span class="visually-hidden">Минимальная цена</span>
+                    <span>от</span>
+                    <input type="text" name="min-price" value="0" placeholder="0">
+                  </label>
+                  <label class="max-price">
+                    <span class="visually-hidden">Максимальная цена</span>
+                    <span>до</span>
+                    <input type="text" name="max-price" value="3000" placeholder="3000">
+                  </label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
               <button class="filter-button-submit" type="submit">ПОКАЗАТЬ</button>
             </fieldset>
+          </div>
         </form>
       </section>
       <section class="hotel-filter-result">
@@ -113,7 +128,7 @@
                 <a href="#">ПО ТИПУ</a>
               </li>
               <li>
-                <a href="#">ПО РЕЙТИНГУ</a>
+                <a class="item-3" href="#">ПО РЕЙТИНГУ</a>
               </li>
               <li class="sorting-style-up">
                 <a href="#">
@@ -134,11 +149,14 @@
               </a>
               <div class="hotel-item-info">
                 <a href="#" class="hotel-item-title">
-                  <h2 class="heading">AMARA RESORT &amp; SPA</h2>                </a>
+                  <h2 class="heading">AMARA RESORT &amp; SPA</h2>
+                </a>
+                <div class="category-wrapper">
                   <span class="hotel-item-category">ГОСТИНИЦА</span>
                   <span class="hotel-item-price">ОТ 4000 Р.</span>
-                <a class="button-info" href="#">ПОДРОБНЕЕ</a>
-                <a class="button-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                  <a class="button-info" href="#">ПОДРОБНЕЕ</a>
+                  <a class="button-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
               </div>
               <div class="result-item-stars">
                 <p class="item-1-stars">
@@ -156,10 +174,12 @@
                 <a href="#" class="hotel-item-title">
                   <h2 class="heading">DESERT QUAIL INN</h2>
                 </a>
-                <span class="hotel-item-category">МОТЕЛЬ</span>
-                <span class="hotel-item-price">ОТ 3000 Р.</span>
-                <a class="button-info" href="#">ПОДРОБНЕЕ</a>
-                <a class="button-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="category-wrapper">
+                  <span class="hotel-item-category">МОТЕЛЬ</span>
+                  <span class="hotel-item-price">ОТ 3000 Р.</span>
+                  <a class="button-info" href="#">ПОДРОБНЕЕ</a>
+                  <a class="button-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
               </div>
               <div class="result-item-stars">
                 <p class="item-2-stars">
@@ -177,14 +197,15 @@
                 <a href="#" class="hotel-item-title">
                   <h2 class="heading">VILLAS AT POCO DIABLO</h2>
                 </a>
-                <span class="hotel-item-category">АПАРТАМЕНТЫ</span>
-                <span class="hotel-item-price">ОТ 2000 Р.</span>
-                <a class="button-info" href="#">ПОДРОБНЕЕ</a>
-                <a class="button-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                <div class="category-wrapper">
+                  <span class="hotel-item-category">АПАРТАМЕНТЫ</span>
+                  <span class="hotel-item-price">ОТ 2000 Р.</span>
+                  <a class="button-info" href="#">ПОДРОБНЕЕ</a>
+                  <a class="button-booking" href="#">ЗАБРОНИРОВАТЬ</a>
+                </div>
               </div>
               <div class="result-item-stars">
-                <p class="item-3-stars">
-                </p>
+                <p class="item-3-stars"></p>
                 <p class="item-rating">
                   РЕЙТИНГ: 9,2
                 </p>
@@ -198,7 +219,7 @@
       <p class="footer-hashtag heading">
         #VISITSEDONA
       </p>
-      <p>
+      <div>
         <ul class="footer-social">
           <li class="social-button">
             <a class="social-button-twitter" href="#">
@@ -219,10 +240,10 @@
             </a>
           </li>
         </ul>
-      </p>
+      </div>
       <p class="footer-copyright">
-        WEBSITE BY
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <span>WEBSITE BY</span>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-htmlacademy.svg" alt="Логотип HTMLAcademy" width="109" height="38">
         </a>
       </p>

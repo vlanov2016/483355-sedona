@@ -5,7 +5,7 @@
   font-family: "PT Sans", Arial , sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color:rgb(0, 0, 0);
+  color:rgb(51, 51, 51);
   text-transform: uppercase;
 }
 
@@ -84,7 +84,7 @@ input[type="radio"].visually-hidden {
 .advantages-item-wrapper h2 {
   margin-top: 0px;
   margin-bottom: 14px;
-  padding: 47px 0px 10px 0px;
+  padding: 47px 120px 10px 120px;
 
   font-size: 21px;
   line-height: 21px;
@@ -97,7 +97,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-item-wrapper p {
-  margin-top: 16px;
+  margin: 16px 46px 0px 46px;
 }
 
 .icon-house,
@@ -128,18 +128,22 @@ input[type="radio"].visually-hidden {
   background-position: 50% 59px;
 }
 
+.item-white-wrapper {
+  text-align: center;
+}
+
+.item-white-wrapper p {
+  padding: 0px 55px;
+}
+
 .item-white-wrapper h2 {
   margin-top: 150px;
   margin-bottom: 14px;
   padding: 11px 0px 10px 0px;
 
   line-height: 21px;
-  text-align: center;
 }
 
-.item-white-wrapper {
-  text-align: center;
-}
 
 .interesting {
   font-size: 30px;
@@ -184,14 +188,18 @@ input[type="radio"].visually-hidden {
 
 .calendar {
   position: absolute;
-  top: 7px;
-  right: 15px;
+  top: 9px;
+  right: 19px;
   display: block;
 
-  width: 22px;
-  height: 24px;
+  width: 0px;
+  height: 0px;
 
   border: none;
+}
+
+.icon-color {
+  fill: rgba(0, 0, 0, 0.302);
 }
 
 .button-minus {
@@ -203,7 +211,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/icon-minus.png");
   background-repeat: no-repeat;
-  background-position: 10px 16px;
+  background-position: 16px 19px;
 
   border: none;
 }
@@ -217,7 +225,7 @@ input[type="radio"].visually-hidden {
 
   background-image: url("../img/icon-plus.png");
   background-repeat: no-repeat;
-  background-position: 10px 11px;
+  background-position: 16px 14px;
 
   border: none;
 }
@@ -232,6 +240,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   text-align: center;
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
 
   background-color: rgb(129, 179, 210);
   border: none;
@@ -272,7 +281,7 @@ input[type="radio"].visually-hidden {
 
   color: rgb(255, 255, 255);
 
-  background-image: url("../img/filter-background.png");
+  background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -323,6 +332,7 @@ input[type="radio"].visually-hidden {
 
   color: rgb(255, 255, 255);
   text-align: center;
+  text-transform: uppercase;
 
   border-style: initial;
   border: 2px solid rgb(255, 255, 255);
@@ -345,6 +355,7 @@ input[type="radio"].visually-hidden {
 .sorting-style li,
 .sorting-style-direction li {
   display: inline-block;
+  vertical-align: bottom;
 }
 
 .sorting-style a.current {
@@ -462,14 +473,15 @@ body {
 
   background-color: rgb(242, 242, 242);
 }
-.container {
+
+.internal-page {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0px;
 
   background-color: rgb(255, 255, 255);
-
-  box-shadow: 0px 5px 5px 5px rgb(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 0px 20px rgb(206,206,206);
+  box-shadow: 0px 0px 20px rgb(206,206,206);
 }
 
 .main-header {
@@ -495,11 +507,11 @@ body {
 }
 
 .site-navigation {
-   width: 1056px;
-   min-height: 20px;
-   margin: 0;
-   padding: 0;
-   padding: 14px 0px;
+  width: 1056px;
+  min-height: 20px;
+  margin: 0;
+  padding: 0;
+  padding: 14px 0px;
 
   list-style: none;
 }
@@ -597,7 +609,7 @@ body {
 }
 
 .advantages-header-wrapper h1 {
-  padding: 61px 0px 15px 0px;
+  padding: 61px 350px 15px 350px;
 }
 
 .advantages-list {
@@ -668,6 +680,10 @@ body {
   padding: 0px;
 }
 
+.items-gray-list p {
+  padding: 0px 22px 0px 22px;
+}
+
 .footer-main {
   position: relative;
 
@@ -718,6 +734,8 @@ body {
   margin: 0;
   padding-left: 102px;
   padding-top: 49px;
+
+  color: rgb(0, 0, 0);
 
   box-sizing: border-box;
 }
@@ -943,6 +961,7 @@ body {
 
   line-height: 27px;
   text-align: center;
+  color: rgb(102, 102, 102);
 
   background-color: rgb(242, 242, 242);
 }
@@ -1000,11 +1019,18 @@ body {
   width: 459px;
   height: 38px;
   margin-bottom: 30px;
-  }
+}
 
 .form-item label {
   display: block;
   width: 95px;
+}
+
+.form-item button,
+.form-item button:active,
+.form-item-age button,
+.form-item-age button:active {
+  outline: none;
 }
 
 .date-wrapper {
@@ -1105,7 +1131,7 @@ body {
   cursor: pointer;
 }
 
-.option-checkbox-off input[type="checkbox"]:not(disabled) + .checkbox-indicator {
+.option-checkbox-off input[type="checkbox"]:not(disabled):not(checked) + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -1115,6 +1141,18 @@ body {
 
   background-image: url("../img/checkbox-off.svg");
 }
+
+.option-checkbox-off input[type="checkbox"]:not(disabled):checked + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+}
+
 
 .option-checkbox-off input[type="checkbox"]:disabled + .checkbox-indicator {
   position: absolute;
@@ -1127,7 +1165,7 @@ body {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
-.option-checkbox-on input[type="checkbox"] + .checkbox-indicator {
+.option-checkbox-on input[type="checkbox"]:checked + .checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -1137,6 +1175,18 @@ body {
 
   background-image: url("../img/checkbox-on.svg");
 }
+
+.option-checkbox-on input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+}
+
 
 .price-controls {
   position: relative;

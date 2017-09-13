@@ -1,0 +1,1 @@
+﻿var link=document.querySelector(".button-form-status"),popup=document.querySelector(".modal-search");link.addEventListener("click",function(o){o.preventDefault(),popup.classList.contains("modal-close")?(popup.classList.remove("modal-close"),popup.classList.add("modal-show")):popup.classList.add("modal-close")});
